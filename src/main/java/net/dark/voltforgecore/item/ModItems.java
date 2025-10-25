@@ -1,3 +1,5 @@
+/* © 2025 Dark_Sc0r – All Rights Reserved. See LICENSE_ASSETS.txt for details */
+
 package net.dark.voltforgecore.item;
 
 import net.dark.voltforgecore.VoltForgeCore;
@@ -9,7 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VoltForgeCore.MOD_ID);
 
-    public static final DeferredItem<Item> TIN = ITEMS.register("tin",
+    public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties()));
 
 
