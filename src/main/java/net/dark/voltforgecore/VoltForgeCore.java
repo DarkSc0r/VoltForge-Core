@@ -1,3 +1,9 @@
+/*
+ * Voltforge: Core
+ * Copyright (c) 2025 Dark_Sc0r
+ * Licensed under the MIT License. See LICENSE file for details.
+ */
+
 package net.dark.voltforgecore;
 
 import net.dark.voltforgecore.item.ModItems;
