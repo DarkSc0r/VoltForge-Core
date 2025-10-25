@@ -1,4 +1,4 @@
-package net.dark.voltforge;
+package net.dark.voltforgecore;
 
 import java.util.List;
 
