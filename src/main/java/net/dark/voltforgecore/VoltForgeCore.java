@@ -9,7 +9,8 @@ package net.dark.voltforgecore;
 import net.dark.voltforgecore.block.ModBlocks;
 import net.dark.voltforgecore.item.ModCreativeModeTabs;
 import net.dark.voltforgecore.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.dark.voltforgecore.keybinds.KeyBindings;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -65,8 +66,8 @@ public class VoltForgeCore {
     @EventBusSubscriber(modid = VoltForgeCore.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
-        static void onClientSetup(FMLClientSetupEvent event) {
-
+        public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
+            event.register(KeyBindings.OPEN_GUI_KEY);
         }
     }
 }

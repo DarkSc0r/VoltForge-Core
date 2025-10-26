@@ -5,5 +5,8 @@
   "block.voltforgecore.tin_block": "Block of Tin",
   "block.voltforgecore.tin_ore": "Tin Ore",
 
-  "creativetab.voltforgecore.volt_forge_core_tab": "VoltForge: Core"
+  "creativetab.voltforgecore.volt_forge_core_tab": "VoltForge: Core",
+
+  "key.categories.voltforgecore": "VoltForge",
+  "key.voltforgecore.open_gui": "Open Questing Menu"
 }

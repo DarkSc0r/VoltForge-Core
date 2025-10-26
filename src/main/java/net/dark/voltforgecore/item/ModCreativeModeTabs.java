@@ -25,17 +25,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TIN_ORE);
                     }).build());
 
-//    public static final Supplier<CreativeModeTab> TEST_VOLT_FORGE_CORE_TAB = CREATIVE_MODE_TAB.register("test_volt_forge_core_tab",
-//            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TIN.get()))
-//                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Voltforgecore.MOD_ID, "volt_forge_core_tab")
-//                    .title(Component.translatable("creativetab.voltforgecore.volt_forge_core"))
-//                    .displayItems((itemDisplayParameters, output) -> {
-//                        output.accept(ModItems.RAW_TIN);
-//                        output.accept(ModItems.TIN);
-//                        output.accept(ModBlocks.TIN_BLOCK);
-//                        output.accept(ModBlocks.TIN_ORE);
-//                    }).build());
-
+//                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Voltforgecore.MOD_ID, "INSERT TAB NAME IN PLACE HERE")
+    
     public static void register(IEventBus event) {
         CREATIVE_MODE_TAB.register(event);
     }
