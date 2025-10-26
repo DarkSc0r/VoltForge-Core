@@ -10,10 +10,19 @@ public class QuestingScreen extends Screen {
         super(Component.literal("VoltForge Test GUI"));
     }
 
-    @Override
-    protected void init(){
-
-    }
+//    @Override
+//    protected void init() {
+//        int x = this.width / 2 - 50;
+//        int y = this.height / 2 - 10;
+//
+//        Button testButton = Button.builder(Component.literal("Click Me!"), button -> {
+//            if (this.minecraft != null && this.minecraft.player != null) {
+//                this.minecraft.player.sendSystemMessage(Component.literal("You clicked the button!"));
+//            }
+//        }).bounds(x, y, 100, 20).build();
+//
+//        addRenderableWidget(testButton);
+//    }
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
