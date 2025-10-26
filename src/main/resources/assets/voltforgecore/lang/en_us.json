@@ -1,4 +1,6 @@
 {
   "item.voltforgecore.raw_tin": "Raw Tin",
-  "item.voltforgecore.tin": "Tin"
+  "item.voltforgecore.tin": "Tin",
+  "block.voltforgecore.tin_block": "Block of Tin",
+  "block.voltforgecore.tin_ore": "Tin Ore"
 }

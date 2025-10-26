@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "voltforgecore:block/tin_ore"
+    }
+  }
+}
