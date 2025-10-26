@@ -7,6 +7,7 @@
 package net.dark.voltforgecore;
 
 import net.dark.voltforgecore.block.ModBlocks;
+import net.dark.voltforgecore.item.ModCreativeModeTabs;
 import net.dark.voltforgecore.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,8 +37,11 @@ public class VoltForgeCore {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -49,12 +53,7 @@ public class VoltForgeCore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RAW_TIN);
-            event.accept(ModItems.TIN);
-            event.accept(ModBlocks.TIN_BLOCK);
-            event.accept(ModBlocks.TIN_ORE);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
