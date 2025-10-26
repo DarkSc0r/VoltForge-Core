@@ -60,6 +60,7 @@ public class VoltForgeCore {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_TIN);
+            event.accept(ModItems.TIN);
         }
     }
 

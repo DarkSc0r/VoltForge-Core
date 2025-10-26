@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "voltforgecore:item/tin"
+    "layer0": "voltforgecore:item/raw_tin"
   }
 }
